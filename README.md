@@ -1,34 +1,34 @@
-# 📘 Todo List App — React + Tailwind CSS
+#  Todo List App — React + Tailwind CSS
 
 A simple and clean **Todo List App** built with **React**, **Tailwind CSS**, and **Vite**.  
 This app allows users to add tasks, mark them as completed, and delete them with smooth UI interactions.
 
 ---
 
-## 🚀 Features
+##  Features
 
-### ✅ Add Tasks  
+###  Add Tasks  
 Add new items using the input field that appears when clicking **Add New Task**.
 
-### ✅ Mark Tasks as Completed  
+###  Mark Tasks as Completed  
 Check the checkbox to toggle completion.  
 Completed tasks show a **line-through** effect.
 
-### ✅ Delete Tasks  
+###  Delete Tasks  
 Hover on a task to show the **DELETE** button.  
 Removes the item instantly.
 
-### ✅ Unique Todo Identification  
+###  Unique Todo Identification  
 Each task uses `Date.now()` to generate a unique ID, ensuring correct rendering and preventing UI bugs.
 
-### ✅ Responsive & Beautiful UI  
+###  Responsive & Beautiful UI  
 - Background image with `bg-cover`  
 - Tailwind-based layout  
 - Smooth hover and transition effects  
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -44,7 +44,7 @@ src/
 
 ---
 
-## 🧠 Core Logic Overview
+##  Core Logic Overview
 
 ### Add New Todo
 ```js
@@ -68,7 +68,7 @@ updated.splice(index, 1);
 
 ---
 
-## 🖼 UI Behavior
+## UI Behavior
 
 - The **AddItem** component handles:
   - Add todo
@@ -86,7 +86,7 @@ updated.splice(index, 1);
 
 ---
 
-## 🎨 Technologies Used
+## Technologies Used
 
 | Tech | Purpose |
 |------|---------|
@@ -97,7 +97,7 @@ updated.splice(index, 1);
 
 ---
 
-## 🌟 Future Enhancements  
+## Future Enhancements  
 - Save todos using **localStorage**  
 - Add **edit task** feature  
 - Add **task categories**  

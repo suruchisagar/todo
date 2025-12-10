@@ -1,16 +1,107 @@
-# React + Vite
+# 📘 Todo List App — React + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean **Todo List App** built with **React**, **Tailwind CSS**, and **Vite**.  
+This app allows users to add tasks, mark them as completed, and delete them with smooth UI interactions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### ✅ Add Tasks  
+Add new items using the input field that appears when clicking **Add New Task**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✅ Mark Tasks as Completed  
+Check the checkbox to toggle completion.  
+Completed tasks show a **line-through** effect.
 
-## Expanding the ESLint configuration
+### ✅ Delete Tasks  
+Hover on a task to show the **DELETE** button.  
+Removes the item instantly.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ Unique Todo Identification  
+Each task uses `Date.now()` to generate a unique ID, ensuring correct rendering and preventing UI bugs.
+
+### ✅ Responsive & Beautiful UI  
+- Background image with `bg-cover`  
+- Tailwind-based layout  
+- Smooth hover and transition effects  
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── assets/
+│   └── bg-image.jpg
+│
+├── components/
+│   └── AddItem.jsx
+│
+└── App.jsx
+```
+
+---
+
+## 🧠 Core Logic Overview
+
+### Add New Todo
+```js
+setTodos([...todos, { id: Date.now(), title: text }]);
+```
+
+### Toggle Task Completion
+```js
+updated[index].status = !updated[index].status;
+```
+
+### Delete Todo
+```js
+updated.splice(index, 1);
+```
+
+### Fix Checkbox Bug with Unique Keys
+```jsx
+<Child key={item.id} ... />
+```
+
+---
+
+## 🖼 UI Behavior
+
+- The **AddItem** component handles:
+  - Add todo
+  - Toggle input visibility
+  - Render todo list
+
+- The **Child** component handles:
+  - Display of a single todo
+  - Completion toggle
+  - Delete button on hover
+
+---
+
+
+
+---
+
+## 🎨 Technologies Used
+
+| Tech | Purpose |
+|------|---------|
+| **React** | Component-based UI |
+| **Tailwind CSS** | Styling |
+| **Vite** | Fast dev environment |
+| **JavaScript** | Main logic |
+
+---
+
+## 🌟 Future Enhancements  
+- Save todos using **localStorage**  
+- Add **edit task** feature  
+- Add **task categories**  
+- Add **dark mode**  
+- Add **animations**  
+
+

@@ -80,11 +80,6 @@ updated.splice(index, 1);
   - Completion toggle
   - Delete button on hover
 
----
-
-
-
----
 
 ## Technologies Used
 

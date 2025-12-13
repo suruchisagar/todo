@@ -90,7 +90,7 @@ updated.splice(index, 1);
 | **Vite** | Fast dev environment |
 | **JavaScript** | Main logic |
 
----
+
 
 ## Future Enhancements  
 - Save todos using **localStorage**  
